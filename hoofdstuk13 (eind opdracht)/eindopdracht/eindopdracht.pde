@@ -11,6 +11,9 @@ int hp2=3;
 boolean Vknop1= false;
 boolean Vknop2= false;
 boolean Vknop3= false;
+String EnOptie1=("schoen");
+String EnOptie2=("mens");
+String EnOptie3=("spin");
 
 
 void setup(){
@@ -30,15 +33,21 @@ knop3= cp.addButton("Knop3")
        .setPosition(1150,750)
        .setSize(200,200)
        .setCaptionLabel("spin");
+if(Vknop1){
+  text("hallo",900,50);
+}
+if(Vknop2){
+  text(EnOptie1||EnOptie2||EnOptie3,900,500);
+}
+if(Vknop3){
+  text(EnOptie1||EnOptie2||EnOptie3,900,500);
+}
+}
 
      
-  
-  
-  
-}
 void draw(){
   textSize(75);
-  text("verslaa je tegenstander",400,200);
+  text("versla je tegenstander",400,200);
 possities(600,700,1300,300,10);
 }
 void possities(int x1,int y1, int breede, int hoogte,int zijkanten){
@@ -46,8 +55,16 @@ void possities(int x1,int y1, int breede, int hoogte,int zijkanten){
 }
 void Knop1(){
   Vknop1=true;
-  text(
-  
-void tegenstander(){
- if(knop1&&knop2
+  textSize(30);
+  text("schoen",300,600);
+}
+void Knop2(){
+  Vknop2=true;
+  textSize(30);
+  text("mens",300,600);
+}
+void Knop3(){
+  Vknop3=true;
+  textSize(30);
+  text("spin",300,600);
 }
